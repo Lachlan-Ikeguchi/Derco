@@ -20,3 +20,5 @@ project(derco-client
 add_executable(derco-client
     src/main.cpp
 )
+
+target_include_directories(derco-client PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
