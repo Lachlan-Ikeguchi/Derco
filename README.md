@@ -1,6 +1,7 @@
 # Derco
 
 > "In mon derco marco axat ison"
+> _May Marcos carry this out of my eye_
 
 ## Idea
 
@@ -13,10 +14,10 @@ A server that owns a camera device and handles AWB and AE as specified in the
 configuration TOML file. Hands over the captured frame to a round-robin worker
 thread pool, and processes it according to the pipeline steps described
 sequentially. The results of the processing feed into a shared result buffer in
-JSON format served to clients with a request-response through a Unix socket.
+JSON format served to clients with a request-response through a UNIX socket.
 
-A client talks to the server through the unix socket, and can request a lean
-result, server stats debuging images of each steps of the pipeline, and read and
+A client talks to the server through the UNIX socket, and can request a lean
+result, server stats, debugging images of each steps of the pipeline, and read and
 write server configuration. This project's own client hosts a web server that
 provides an interface with a tab to configure the pipeline, see the server telemetry,
 and see the results of the pipeline.
@@ -27,11 +28,11 @@ and see the results of the pipeline.
 
 - `./path/to/config.toml`: specifies TOML configuration path (required).
 - `--camera /dev/video0`: override TOML specified camera path.
-- `--socket /tmp/dergo-server.sock`: override TOML specified socket path.
+- `--socket /tmp/derco-server.sock`: override TOML specified socket path.
 
 ## Client
 
 ### Arguments
 
-- `--socket /tmp/dergo-server.sock`: specifies the dergo server socket (required).
+- `--socket /tmp/derco-server.sock`: specifies the derco server socket (required).
 - `--port 8080`: specifies web server port (default 8080).
