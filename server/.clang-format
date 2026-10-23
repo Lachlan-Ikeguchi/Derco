@@ -1,0 +1,11 @@
+# LLVM-based clang-format configuration with 4-space indentation
+BasedOnStyle: LLVM
+IndentWidth: 4
+UseTab: Never
+BreakBeforeBraces: Allman
+AllowShortIfStatementsOnASingleLine: false
+IndentCaseLabels: true
+ColumnLimit: 80
+AccessModifierOffset: -4
+NamespaceIndentation: All
+FixNamespaceComments: true
