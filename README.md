@@ -3,6 +3,12 @@
 > "In mon derco marco axat ison"
 > _May Marcos carry this out of my eye_
 
+## Building
+
+1. `make build`
+
+The binaries are available at `./server/bin/derco-server` and `./client/bin/derco-client`.
+
 ## Idea
 
 A performant modular CV pipeline described by a TOML file that can be configured
